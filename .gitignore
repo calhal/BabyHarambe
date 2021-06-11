@@ -1,0 +1,4 @@
+.env
+dev-keys.json
+build/
+.DS_Store

@@ -1,5 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const privateKeys = ['0x']; 
+const keys = require('./dev-keys.json');
+const privateKeys = [keys.privateKey]; 
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -89,7 +90,7 @@ module.exports = {
         privateKeys, 
         'https://data-seed-prebsc-1-s1.binance.org:8545'
       ),
-      gas: 6897127,
+      gas: 26897127,
       network_id: 97,
       skipDryRun: true
     }
